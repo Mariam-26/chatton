@@ -1,0 +1,79 @@
+/* COULEURS EN ROOT  */
+
+:root {
+    --navbar: #061339;
+    --titreh1: #FFF;
+    --autres-titres: #2F4073;
+    --pied-page: #061339;
+    --tête-chat-défaut: #7885A5;
+    --tête-chat-hover: #061339;
+    --rangee-1: #f1f1f1;
+    --rangee-2: #ddd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merienda', cursive;
+}
+
+
+/* nav */
+
+nav {
+    background-color: var(--navbar);
+    height: 50px;
+}
+
+nav h1 {
+    color: var(--titreh1);
+    font-size: 1.5em;
+    width: 70%;
+    margin: auto;
+}
+
+#entete {
+    background-image: url(../img/background.jpg);
+    height: 180px;
+}
+
+#entete h2 {
+    color: var(--titreh1);
+    text-align: center;
+    line-height: 180px;
+    text-shadow: 1px 1px 2px var(--navbar);
+}
+
+.row {
+    width: 80%;
+    margin: auto !important;
+}
+
+main {
+    background-color: var(--rangee-1);
+}
+
+#bg-gris {
+    background-color: var(--rangee-2);
+}
+
+h3 {
+    color: var(--autres-titres);
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#bg-gris h2 {
+    color: var(--autres-titres);
+    font-size: 30px;
+}
+
+form {
+    border: 1px solid var(--rangee-2);
+    padding: 10px;
+    border-radius: 5px;
+}
