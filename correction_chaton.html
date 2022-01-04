@@ -23,142 +23,144 @@
 </head>
 
 <body>
-    <!-- HEADER -->
+    <!-- debut header -->
     <header>
-        <!-- NAV -->
-        <nav>
-            <h1 class="pt-2">Ohmycats</h1>
+
+        <!-- debut nav -->
+
+
+        <nav class="navbar">
+            <h1 class="pt-1">Oh my cat !</h1>
         </nav>
-        <!-- Fin de NAV -->
-        <!-- SECTION -->
-        <section>
+
+        <!-- fin nav -->
+
+        <section id="entete" class="mb-0">
             <h2>Adoptez un chat trop bon !</h2>
         </section>
-        <!-- Fin SECTION -->
-    </header>
-    <!-- FIN HEADER -->
+        <!-- fin section -->
 
-    <!-- MAIN -->
-    <main>
-        <!-- Début de la section 1 -->
-        <section class="row">
+    </header>
+    <!-- fin header -->
+
+    <main class="pt-5 mt-0">
+
+        <section class="row conteneur">
 
             <aside class="col-12 col-lg-3">
                 <h3>Les chats à adopter</h3>
-                <form action="#" method="POST">
+                <form action="#" method="POST" id="form ">
                     <div class="mb-3">
-                        <label for="Choix du Chat">Choix du Chat</label>
-                        <select name="ChoixChat" id="ChoixChat">
-                  Sélectionnez
-                  <option value="1">Sushi</option>
-                  <option value="2">Maki</option>
-                  <option value="3">Sashimi</option>
-                  <option value="4">Yakitori</option>
-                  <option value="5">Onigri</option>
-                </select>
+                        <label for="ChoixChat" class="form-label">Choix du chat :</label>
+                        <select name="ChoixChat" id="ChoixChat" class="form-select">
+                                <option selected>-- Sélectionnez --</option>
+                                <option value="sushi">SUSHI</option>
+                                <option value="maki">MAKI</option>
+                                <option value="sashimi">SASHIMI</option>
+                                <option value="yakitori">YAKITORI</option>
+                                <option value="onigri">ONIGRI</option>
+                            </select>
                     </div>
-
                     <div class="mb-3">
-                        <label for="validationTexte" class="formlabel">Raison d'adoption</label>
-                        <textarea name="validationTexte" id="validationTexte" class="form-cotrol " spellcheck="height: 200px;" placeholder="Saisissez ici les raisons pour lesquelles vous voulez adopter ce chat...." required></textarea>
+                        <label for="validationTexte" class="form-label">Raison d'adoption</label>
+                        <textarea name="validationTexte" id="validationTexte" class="form-control" style="height: 200px;" placeholder="Saississez les raisons pour lesquelles vous voulez adopter ce chat...." required></textarea>
                     </div>
-
                     <div class="d-grid gap-2">
-                        <button class="btn btn-success" type="submit" id="btnForm">Envoyer</button>
+                        <button class="btn btn-success" type="bubmit" id="btnForm">Envoyer</button>
                     </div>
                 </form>
+                <!-- fin formulaire -->
             </aside>
 
             <div class="col-12 col-lg-9">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <!-- carroussel -->
+                <div id="carouselExampleCaptions" class="carousel slide mt-3" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/chat_1.jpg" class="d-block w-100" alt="image de chat Sushi">
+                            <img src="img/chat_1.jpg" class="d-block w-100" alt="chat 1">
                             <div class="carousel-caption d-none d-md-block">
-                                <h4>Sushi</h4>
+                                <h5>SUSHI</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/chat_2.jpg" class="d-block w-100" alt="image de chat">
+                            <img src="img/chat_2.jpg" class="d-block w-100" alt="chat 2">
                             <div class="carousel-caption d-none d-md-block">
-
-                                <h4>Sushi</h4>
+                                <h5>MAKI</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/chat_3.jpg" class="d-block w-100" alt="image de chat">
+                            <img src="img/chat_3.jpg" class="d-block w-100" alt="chat 3">
                             <div class="carousel-caption d-none d-md-block">
-
+                                <h5>SASHIMI</h5>
                             </div>
                         </div>
-
                         <div class="carousel-item">
-                            <img src="img/chat_4.jpg" class="d-block w-100" alt="image de chat Yakirito">
+                            <img src="img/chat_4.jpg" class="d-block w-100" alt="chat 4">
                             <div class="carousel-caption d-none d-md-block">
-                                <h4>Yakirito</h4>
+                                <h5>YAKITORI</h5>
                             </div>
                         </div>
-
                         <div class="carousel-item">
-                            <img src="img/chat_5.jpg" class="d-block w-100" alt="image de chat Onigri">
+                            <img src="img/chat_5.jpg" class="d-block w-100" alt="chat 5">
                             <div class="carousel-caption d-none d-md-block">
-                                <h4>Onigri</h4>
+                                <h5>ONIGRI</h5>
                             </div>
                         </div>
-
-
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-
-
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
                 </div>
-        </section>
-        <!-- Fin de la section 1 -->
-
-        <!-- Début de la section 2 -->
-
-        <section class="row">
-            <div class="col-12 col-lg-9">
-                <h2>Nos chats à adopter</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur reprehenderit, provident consectetur non quam possimus culpa laborum placeat necessitatibus, ratione amet veniam sint ducimus eligendi eius ab! Iste, aspernatur consequuntur?
-                    Quas omnis accusantium natus iusto velit dolor sint ipsa obcaecati harum saepe soluta, illum laboriosam, ex labore repudiandae totam doloribus libero dolores, corrupti quae dignissimos. Natus sapiente sequi adipisci tenetur?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur reprehenderit, provident consectetur non quam possimus culpa laborum placeat necessitatibus, ratione amet veniam sint ducimus eligendi eius ab! Iste, aspernatur consequuntur?
-                    Quas omnis accusantium natus iusto velit dolor sint ipsa obcaecatiharum saepe soluta, illum laboriosam, ex labore repudiandae totamdoloribus libero dolores, corrupti quae dignissimos. Natus sapientesequi adipisci tenetur?</p>
+                <!-- fin carroussel -->
             </div>
 
-            <div class="col-12 col-lg-3">
-                <img src="img/tete-chat.png" alt="Une tête de chat" class="img-fluid" id="tetDeChat">
+
             </div>
+            <!-- fin div container -->
         </section>
-        <!-- Fin de la section 2 -->
+        <!-- fin section 1 -->
+
+        <div id="bg-gris" class="py-3 mt-4">
+            <section class="row">
+                <div class="col-12 col-lg-9">
+                    <h2>Nos chats à adopter...</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, non? Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem
+                        ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <img src="img/tete-chat.png" alt="tete de chat" class="img-fluid" id="teteDeChat">
+                </div>
+            </section>
+            <!-- fin section 2 -->
+        </div>
+
     </main>
-    <!-- FIN MAIN -->
+    <!-- fin container main -->
 
-    <!-- FOOTER -->
-
-    <footer>
-        <p class="text-end">&copy; Ohmycats</p>
+    <!-- footer -->
+    <footer class="d-flex justify-content-end  pr-5 mt-0 mb-3">
+        <p class="col-md-4 mb-0 text-white">&copy; Adopte un chat</p>
     </footer>
-
-    <!-- FOOTER -->
+    <!-- fin footer -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Mon JS -->
+    <script src="js/correction_chaton.js"></script>
 </body>
 
 </html>
